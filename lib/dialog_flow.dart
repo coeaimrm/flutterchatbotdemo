@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dialogflow/dialogflow_v2.dart';
-import 'package:speech_to_text/speech_to_text.dart';
+import 'package:speech_to_text/speech_to_text.dart' as stt;
 
 import 'facts_message.dart';
 
@@ -18,16 +18,17 @@ class FlutterFactsChatBot extends StatefulWidget {
 class _FlutterFactsChatBotState extends State<FlutterFactsChatBot> {
   final List<Facts> messageList = <Facts>[];
   final TextEditingController _textController = new TextEditingController();
-  final stt = SpeechToText();
-
+  stt.SpeechToText _speech;
+  bool _isListening = false;
   @override
   void initState() {
     _textController.addListener(() {
       setState(() {});
     });
     super.initState();
+    _speech = stt.SpeechToText();
   }
-
+  String resultText = "";
   Widget _queryInputWidget(BuildContext context) {
     return Row(
       children: <Widget>[
@@ -49,31 +50,32 @@ class _FlutterFactsChatBotState extends State<FlutterFactsChatBot> {
                       ),
                     ),
                   ),
-                  _textController.text.isNotEmpty
-                      ? null
-                      : IconButton(
+
+                       IconButton(
                           icon: Icon(Icons.mic_none, color: Colors.grey[700]),
                           onPressed: () async {
-                            if (stt.isListening) return;
-                            final available = await stt.initialize(
-                              debugLogging: true,
-                              onError: (err) => print(err.errorMsg),
-                              onStatus: (status) => print(status),
-                            );
-                            print(available);
-                            if (available)
-                              await stt.listen(
-                                cancelOnError: true,
-                                partialResults: true,
-                                onResult: (result) {
-                                  print(result.recognizedWords);
-                                  setState(() {
-                                    _textController.text = result.recognizedWords;
-                                  });
-                                },
+                            if (!_isListening) {
+                              bool available = await _speech.initialize(
+                                onStatus: (val) => print('onStatus: $val'),
+                                onError: (val) => print('onError: $val'),
                               );
-                          },
-                        )
+                              
+
+                              print(available);
+                              if (available)
+                                await _speech.listen(
+                                  cancelOnError: true,
+                                  partialResults: true,
+                                  onResult: (result) {
+                                    print(result.recognizedWords);
+                                    setState(() {
+                                      _textController.text =
+                                          result.recognizedWords;
+                                    });
+                                  },
+                                );
+                            }
+                          })
                 ],
               ),
             ),
