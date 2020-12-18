@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "college-chatbot-oeyuof",
+  "private_key_id": "fc62a6d4936e3d694470b9aeea1355e30d609609",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCxGdWYW7+AX88y\n8E8Er6cNEF6ztS+5Pk5O9VcVUhgaE1hThOm0vQR6yDwEJnTbPkn+qYJMFpBsPpVB\np8LOEfz8BfCv/8UTn55i1xQxWxe1TYnyqi4SRPUiIYY7Ci3SQw2PNzyJY449RZ7r\nzl7yk4ksJogjc7BmDNiAfV5YfpPoxd3tLPiDz8e9jzRBKswAu5edRENoKqSQ2YhQ\nHiDxO7sl0DGcAZ6opCYFFiQbEikgwFi2LuE/QhM8s9oYq9LXHfdgcgaCLTvz17QP\nt6y86hoHbGJbzKEK5hYE6XCmeyvLizeu3sOPp01Mk2agxvHgJbE2wTcdzqOp69Nm\nCM7hNto1AgMBAAECggEAEwUMQcLwtm++XTZztgl17lrothy/qwGm//yB8AyTVrw8\nddPGFElhzByUXXm9KQ1FKHAPSe6jxLbqk/+EAK+WiivKeoxZyk66gDD1vos4PkS9\nNkN9PoG2CzFV13deDmvHGVoRn/ZXgKW+eI1UTcb3Kg0FUpFfy3CWZnjlrf6svIh9\nfuXYR2U4fVZvyUVUsg9lRKptrExC0J/BXl3bIlbGA7ss60L9l1dsjoALBoX7c0Ue\n1qEs0fS8Rf90ZCb8XL5+1fBO8ziu5+I/E8Sggr2PJ265r8iNr85h/K6kIl4M/5Of\nfaEFJH1rh486bWp/ZXBrIQrFqs5q72hME+SD7bHObQKBgQDuLdvLDVy2kwU8f+ET\neMljJ9dHJ70IA+1WDC9LgFuCIW7RmkoNJzUwy0IfB8FHi0SoqrlVLpOIGaYBUX4U\nEgbnJAhwJFCHv9OB1Amo7wPog3DAQifrtETpCbRKs2MyOuGWVZqRwCNcndQmwlRH\njX7I95FPAM7OO8xTKSwDj5KBEwKBgQC+WhGRdyu+yXbOpyTp0DbmcCBcZ9V2Wgd8\n6K3OY8XpqKSEz8gAejT43anSLqSyKE8tHR+bfo3lqj9cCRiCY8BCFifd5D8ll1sH\nww5Oaibd+x5aLHm5N5bjz2FlTC/SXo4w5po8QVDZPEGMJ4v2hmeAeOCKeFbPJOWz\nLR2wVc9olwKBgQCoLBUfQCYQe6qc1yZTG1wG+SCWC0b7m9o+gYf7ZXw3W+flc22J\n7/8snrfnNRCRtZIbDcCilqpw1LtT/vhor3nURqr2k42Q7C8pYlAXyfwWdohsF8oc\nMULe0I1OmW8XDmAuR+9FrkbJpF8hpuDfTNcSi0s8XzOmhq50oYOEWCF3pQKBgQCu\nyt5fCWNuKmmikfFfkwcWy9ergt2NdFZz6OXRI+VVDrskCfjKF24VKNcMXjB2OHWc\nI6YmjyuVvaO4y9Fpyld9WAL7yuABkN7SXdcBQpC2PiY8/6I25kj0oDX7Yt52+sTv\nOpJeykuHb8FxBc+MbRcV7emivaZZSLR0t/UPO3zduQKBgQDLxkP8RnQJtmpayaYv\nfJK+HACsvBdepBxF5lmMHUIpVWSBV/p9l5Ywv/6ZDuJT9OZLXa+KVlECHmdFBXAr\nXtE8cZKcFg6AuwI96f5QNY7vQsip+OocVg+LfuF/BMVBoLvNJa4JJnGmn14IbC6F\n/osekldlA00R0ggwwpEmBJ72fg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-wpxdpv@college-chatbot-oeyuof.iam.gserviceaccount.com",
+  "client_id": "111565600577390433124",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-wpxdpv%40college-chatbot-oeyuof.iam.gserviceaccount.com"
+}
